@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="362.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFX.DishController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="8.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bigtasty.png" />
+         </image>
+         <effect>
+            <Blend />
+         </effect></ImageView>
+      <Button layoutX="8.0" layoutY="13.0" mnemonicParsing="false" onAction="#bigTastyMenu" opacity="0.0" prefHeight="113.0" prefWidth="150.0" text="BigTastyButton">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="114.0" fitWidth="108.0" layoutX="379.0" layoutY="12.0" pickOnBounds="true">
+         <image>
+            <Image url="@McChicken.png" />
+         </image></ImageView>
+      <Button layoutX="379.0" layoutY="17.0" mnemonicParsing="false" onAction="#mcChickenMenu" opacity="0.0" prefHeight="106.0" prefWidth="108.0" text="McChickenButton">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="nomePanino" alignment="CENTER" layoutX="184.0" layoutY="192.0" prefHeight="44.0" prefWidth="150.0" text="Seleziona menù">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="nomeBevanda" alignment="CENTER" layoutX="184.0" layoutY="247.0" prefHeight="44.0" prefWidth="150.0" text="Seleziona bibita">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="prezzo" alignment="CENTER" layoutX="184.0" layoutY="304.0" prefHeight="44.0" prefWidth="150.0" text="Prezzo menù">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="183.0" layoutY="126.0" prefHeight="44.0" prefWidth="150.0" text="Riepilogo del tuo menù:">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
